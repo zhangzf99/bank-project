@@ -1,0 +1,104 @@
+.withdrawal {
+  background-color: #efefef;
+  height: 100vh;
+  padding: 0.32rem;
+  box-sizing: border-box;
+  .title {
+    font-size: 0.28rem;
+  }
+  .card {
+    margin-top: 0.28rem;
+    display: flex;
+    font-size: 0;
+    > div {
+      &:nth-child(1) {
+        display: flex;
+        align-items: center;
+        margin-right: 0.2rem;
+        img {
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+        }
+      }
+      &:nth-child(2) {
+        flex: 1;
+        font-size: 0.36rem;
+        div {
+          &:nth-child(2) {
+            margin-top: 0.1rem;
+            font-size: 0.28rem;
+            color: #969799;
+          }
+        }
+      }
+      &:nth-child(3) {
+        display: flex;
+        align-items: center;
+        img {
+          width: 0.36rem;
+          height: 0.36rem;
+        }
+      }
+    }
+  }
+  .withdrawal-amount {
+    margin-top: 0.3rem;
+    background-color: #fff;
+    border-radius: 0.1rem;
+    padding: 0.3rem;
+    .desc {
+      font-size: 0.28rem;
+      margin-bottom: 0.2rem;
+    }
+    .form {
+      .form-item {
+        border-bottom: 1px solid #f7f7f7;
+        position: relative;
+        /deep/ .van-field {
+          padding: 0;
+          .van-cell__value {
+            padding-left: 0.4rem;
+            .van-field__body {
+              .van-field__control {
+                color: #000;
+                font-size: 0.4rem;
+                font-weight: 500;
+              }
+            }
+          }
+          div {
+            background-color: #fff;
+            line-height: 0.5rem;
+            padding: 0.08rem 0.2rem;
+            border-radius: 0.08rem;
+          }
+        }
+        img {
+          width: 0.36rem;
+          height: 0.36rem;
+          position: absolute;
+          top: 0.22rem;
+          left: 0rem;
+          z-index: 1;
+        }
+      }
+    }
+    .all-money {
+      margin-top: 0.2rem;
+      font-size: 0.26rem;
+      color: #837f7f;
+      span {
+        color: #567ccf;
+      }
+    }
+  }
+  .buttons {
+    margin-top: 0.4rem;
+    /deep/ .van-button {
+      border-radius: 0.1rem;
+      background-color: #567ccf;
+      font-size: 0.3rem;
+    }
+  }
+}

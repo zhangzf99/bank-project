@@ -1,0 +1,73 @@
+.my-account-money {
+  background-color: #efefef;
+  min-height: 100vh;
+  .top {
+    background-color: #fff;
+    display: flex;
+    padding: 0.32rem;
+    > div {
+      flex: 1;
+      text-align: center;
+      font-size: 0.3rem;
+      font-weight: 500;
+      &.expenditure {
+        color: #78b898;
+      }
+      &.income {
+        color: #cb6868;
+      }
+      div {
+        &:nth-child(1) {
+          margin-bottom: 0.1rem;
+        }
+      }
+    }
+  }
+  .details {
+    background-color: #fff;
+    margin-top: 0.2rem;
+    font-size: 0;
+    .item {
+      padding: 0.3rem 0.32rem;
+      display: flex;
+      align-items: center;
+        border-bottom: 1px solid#f6f5f5;
+        
+      > div {
+        &:nth-child(1) {
+          color:#aeaeae ;
+          flex: 2;
+          font-size: 0.28rem;
+          div {
+            &:nth-child(1) {
+              color: #000;
+              margin-bottom: 0.18rem;
+            }
+          }
+          .opration-name {
+            font-weight: 500;
+          }
+        }
+        &:nth-child(2) {
+          color:#aeaeae ;
+          font-size: 0.28rem;
+          flex: 2;
+          text-align: right;
+          div {
+            &:nth-child(1) {
+              margin-bottom: 0.1rem;
+            }
+          }
+        }
+        &:nth-child(3) {
+          width: 0.8rem;
+          text-align: right;
+          img {
+            width: 0.3rem;
+            height: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}

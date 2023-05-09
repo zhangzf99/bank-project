@@ -1,0 +1,69 @@
+.registration-page {
+  padding: 0.32rem;
+  .form {
+    .form-item {
+      position: relative;
+      /deep/ .van-field {
+        padding: 0.2rem 0;
+        .van-cell__value {
+          padding-left: 0.6rem;
+          .van-field__body {
+            .van-field__control {
+              color: #aeaeae;
+            }
+          }
+        }
+        div {
+          background-color: #f1f1f1;
+          line-height: 0.5rem;
+          padding: 0.08rem 0.2rem;
+          border-radius: 0.08rem;
+        }
+      }
+      img {
+        width: 0.36rem;
+        height: 0.36rem;
+        position: absolute;
+        top: 0.42rem;
+        left: 0.2rem;
+        z-index: 1;
+      }
+      &.form-code,
+      &.form-message {
+        display: flex;
+        .item-code {
+          background-color: beige;
+          font-size: 0.4rem;
+          width: 3rem;
+          height: 0.76rem;
+          margin-top: 0.22rem;
+          margin-left: 0.2rem;
+        }
+        .item-message {
+          color: #3d3d3d;
+          font-size: 0.2rem;
+          width: 3rem;
+          text-align: center;
+          margin-top: 0.38rem;
+        }
+      }
+    }
+    .warn-info {
+      padding: 0.2rem 0.32rem 0 0rem;
+      font-size: 0.26rem;
+      color: rgb(236, 46, 46);
+    }
+    .buttons {
+      padding: 0.2rem 0;
+      padding-top: 0.3rem;
+      .van-button {
+        padding: 0.2rem;
+        height: 0.8rem;
+        &:nth-child(1) {
+          margin-bottom: 0.3rem;
+          background-color: #567ccf;
+        }
+      }
+    }
+  }
+}

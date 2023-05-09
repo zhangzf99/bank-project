@@ -1,0 +1,58 @@
+.bank-card {
+  padding: 0.32rem;
+  background-color: #efefef;
+  height: 100vh;
+  box-sizing: border-box;
+  .cards {
+    .item {
+      background-color: aquamarine;
+      padding: 0.3rem;
+      border-radius: 0.1rem;
+
+      > div {
+        font-size: 0;
+        &:nth-child(1) {
+          img {
+            width: 0.16rem;
+            height: 0.16rem;
+            margin-right: 0.1rem;
+          }
+          span {
+            font-size: 0.2rem;
+            position: relative;
+          }
+        }
+        &:nth-child(2) {
+          margin-top: 0.2rem;
+          div {
+            color: #fff;
+            font-size: 0.26rem;
+          }
+        }
+        &:nth-child(3) {
+          margin-top: 0.09rem;
+          div {
+            font-size: 0.36rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .add-card {
+    font-size: 0;
+    background-color: #fff;
+    margin-top: 0.3rem;
+    padding: 0.4rem 0.3rem;
+    display: flex;
+    align-items: center;
+    img {
+      width: 0.3rem;
+      height: 0.3rem;
+      margin-right: 0.1rem;
+    }
+    span {
+      font-size: 0.28rem;
+    }
+  }
+}

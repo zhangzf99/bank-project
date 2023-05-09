@@ -1,0 +1,100 @@
+// @import '../../styles/mixin.scss';
+.login {
+  padding-top: 1rem;
+  .logo {
+    width: 4rem;
+    text-align: center;
+    margin: 0 auto;
+    .img {
+      width: 2rem;
+      height: 2rem;
+    }
+    .name {
+      font-size: 0.5rem;
+    }
+  }
+  .form {
+    margin-top: 0.8rem;
+    .form-item {
+      position: relative;
+      /deep/ .van-field {
+        padding: 0.2rem 0.4rem;
+
+        .van-cell__value {
+          padding-left: 0.6rem;
+          .van-field__body {
+            .van-field__control {
+              color: #aeaeae;
+            }
+          }
+        }
+        div {
+          background-color: #f1f1f1;
+          line-height: 0.5rem;
+          padding: 0.08rem 0.2rem;
+          border-radius: 0.08rem;
+        }
+      }
+      .van-cell {
+        &::after {
+          border-bottom: none;
+        }
+      }
+      img {
+        width: 0.36rem;
+        height: 0.36rem;
+        position: absolute;
+        top: 0.4rem;
+        left: 0.7rem;
+        z-index: 1;
+      }
+      &.form-code {
+        display: flex;
+        .item-code {
+          background-color: beige;
+          font-size: 0.4rem;
+          width: 3rem;
+          height: 0.76rem;
+          margin-right: 0.4rem;
+          margin-top: 0.22rem;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+    .warn-info {
+      padding: 0.2rem 0.32rem 0 0.4rem;
+      font-size: 0.26rem;
+      color: rgb(236, 46, 46);
+    }
+    .buttons {
+      padding: 0.2rem;
+      padding-top: 0.3rem;
+      .van-button {
+        padding: 0.2rem;
+        height: 0.8rem;
+        &:nth-child(1) {
+          margin-bottom: 0.3rem;
+          background-color: #2970e2;
+        }
+        &:nth-child(2) {
+          margin-bottom: 0.3rem;
+          background-color: #fff;
+          color: #528fc5;
+        }
+      }
+    }
+    .forget-password {
+      margin-top: 0.24rem;
+      font-size: 0.26rem;
+      color: #528fc5;
+      text-align: center;
+    }
+  }
+}

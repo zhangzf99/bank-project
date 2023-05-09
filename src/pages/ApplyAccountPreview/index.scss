@@ -1,0 +1,174 @@
+.apply-account-preview {
+  background-color: #f3f3f3;
+  height: 100vh;
+  overflow-y: auto;
+  .id-cards {
+    background-color: #fff;
+    .cards {
+      padding: 0.2rem;
+      padding-bottom: 0.4rem;
+      display: flex;
+      font-size: 0.28rem;
+      .left {
+        margin-right: 0.1rem;
+      }
+      .right {
+        margin-left: .1rem;
+      }
+      div {
+        /deep/ .van-uploader {
+          width: 3.5rem;
+          height: 2rem;
+          margin-bottom: 0.2rem;
+          .van-uploader__wrapper {
+            width: 100%;
+            height: 100%;
+            .van-uploader__upload {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        flex: 1;
+        text-align: center;
+      }
+    }
+    .upload {
+      font-size: 0.28rem;
+      color: #528fc5;
+      text-align: center;
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  .form {
+    background: #ffffff;
+    font-size: 0.28rem;
+    color: #605e5e;
+
+    padding: 0 0.32rem;
+    .comfirm {
+      line-height: 1rem;
+    }
+    .form-item {
+      position: relative;
+      border-bottom: 1px solid #f7f7f7;
+      /deep/ .van-field {
+        padding: 0.02rem 0;
+        div {
+          background-color: #fff !important;
+          &.edit {
+            background-color: #f1f1f1;
+          }
+        }
+        .van-cell__value {
+          padding-left: 1.4rem;
+          .van-field__body {
+            .van-field__control {
+              color: #aeaeae;
+            }
+          }
+        }
+        div {
+          background-color: #f1f1f1;
+          line-height: 0.5rem;
+          padding: 0.08rem 0.2rem;
+          border-radius: 0.08rem;
+        }
+      }
+      span {
+        // width: 0.36rem;
+        height: 0.82rem;
+        position: absolute;
+        top: 0.24rem;
+        left: 0.2rem;
+        z-index: 1;
+      }
+    }
+  }
+  .tips {
+    font-size: 0.24rem;
+    color: #b4b4b4;
+    margin: 0.2rem 0 0.4rem 0;
+    padding: 0 0.32rem;
+  }
+  .buttons {
+    padding: 0.2rem 0.4rem;
+    padding-top: 0.3rem;
+    .van-button {
+      padding: 0.2rem;
+      height: 0.8rem;
+      margin-bottom: 0.3rem;
+      background-color: #567ccf;
+      border-radius: 0.1rem;
+    }
+  }
+  .avatar-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+  }
+  .avatar {
+    width: 178px;
+    height: 178px;
+    display: block;
+  }
+  .warn-info {
+    padding: 0.2rem 0.32rem .4rem 0.4rem;
+    font-size: 0.26rem;
+    color: rgb(236, 46, 46);
+  }
+}
+
+.avatar-uploader {
+  // width: 3.34rem;
+  // height: 2.8rem;
+  background-color: #f7f8fa;
+}
+
+
+/deep/ .avatar-uploader {
+  .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-bottom: .2rem;
+    &:hover {
+      border-color: #409EFF;
+
+    }
+    .avatar-uploader-icon {
+      font-size: 28px;
+      color: #8c939d;
+      width: 100%;
+      height: 100%;
+      // line-height: 2rem;
+      text-align: center;
+    }
+  }
+  .avatar {
+    width: 100%;
+    height: 2.8rem;
+    display: block;
+  }
+}
+
+
